@@ -66,6 +66,24 @@ const JERSEYS = [
   },
 
   {
+    nombre: "Real Madrid 2025 · Mbappé #10",
+    deporte: "Fútbol",
+    precio: 749,
+    tallas: ["L"],
+    foto: "fotos/jersey-real-madrid-2025-mbappe-talla-l-frente.jpeg",
+    fotoAtras: "fotos/jersey-real-madrid-2025-mbappe-talla-l-atras.jpeg"
+  },
+
+  {
+    nombre: "Chelsea 2025 · Palmer #10",
+    deporte: "Fútbol",
+    precio: 749,
+    tallas: ["L"],
+    foto: "fotos/jersey-chelsea-2025-palmer-talla-l-frente.jpeg",
+    fotoAtras: "fotos/jersey-chelsea-2025-palmer-talla-l-atras.jpeg"
+  },
+
+  {
     nombre: "Barcelona 2009 · Messi #10",
     deporte: "Fútbol",
     precio: 849,
