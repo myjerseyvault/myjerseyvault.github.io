@@ -65,4 +65,67 @@ const JERSEYS = [
     fotoAtras: "fotos/jersey-real-madrid-2026-bellingham-talla-s-atras.jpeg"
   },
 
+  {
+    nombre: "Barcelona 2009 · Messi #10",
+    deporte: "Fútbol",
+    precio: 849,
+    tallas: ["M"],
+    foto: "fotos/jersey-barcelona-2009-messi-talla-m-frente.jpeg",
+    fotoAtras: "fotos/jersey-barcelona-2009-messi-talla-m-atras.jpeg"
+  },
+
+  {
+    nombre: "Brasil 2002 · Ronaldo Nazário #9",
+    deporte: "Fútbol",
+    precio: 849,
+    tallas: ["L"],
+    foto: "fotos/jersey-brasil-2002-ronaldo-nazario-talla-l-frente.jpeg",
+    fotoAtras: "fotos/jersey-brasil-2002-ronaldo-nazario-talla-l-atras.jpeg"
+  },
+
+  {
+    nombre: "Francia 1998 · Zidane #10",
+    deporte: "Fútbol",
+    precio: 849,
+    tallas: ["L"],
+    foto: "fotos/jersey-francia-1998-zidane-talla-l-frente.jpeg",
+    fotoAtras: "fotos/jersey-francia-1998-zidane-talla-l-atras.jpeg"
+  },
+
+  {
+    nombre: "Juventus 2014 · Pogba #6",
+    deporte: "Fútbol",
+    precio: 849,
+    tallas: ["L"],
+    foto: "fotos/jersey-juventus-2014-pogba-talla-l-frente.jpeg",
+    fotoAtras: "fotos/jersey-juventus-2014-pogba-talla-l-atras.jpeg"
+  },
+
+  {
+    nombre: "Liverpool 2006 · Gerrard #8",
+    deporte: "Fútbol",
+    precio: 849,
+    tallas: ["L"],
+    foto: "fotos/jersey-liverpool-2006-gerrard-talla-l-frente.jpeg",
+    fotoAtras: "fotos/jersey-liverpool-2006-gerrard-talla-l-atras.jpeg"
+  },
+
+  {
+    nombre: "Milan 2006 · Kaká #22",
+    deporte: "Fútbol",
+    precio: 849,
+    tallas: ["M"],
+    foto: "fotos/jersey-milan-2006-kaka-talla-m-frente.jpeg",
+    fotoAtras: "fotos/jersey-milan-2006-kaka-talla-m-atras.jpeg"
+  },
+
+  {
+    nombre: "New York Yankees · Judge #99",
+    deporte: "Béisbol",
+    precio: 1099,
+    tallas: ["M"],
+    foto: "fotos/jersey-yankees-judge-talla-m-frente.jpeg",
+    fotoAtras: "fotos/jersey-yankees-judge-talla-m-atras.jpeg"
+  },
+
 ];
