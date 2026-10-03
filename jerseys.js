@@ -182,4 +182,31 @@ const JERSEYS = [
     fotoAtras: "fotos/jersey-bengals-burrow-talla-xl-atras.jpeg"
   },
 
+  {
+    nombre: "Ferrari F1 · Equipo",
+    deporte: "Fórmula 1",
+    precio: 849,
+    tallas: ["L"],
+    foto: "fotos/jersey-ferrari-talla-l-frente.jpeg",
+    fotoAtras: "fotos/jersey-ferrari-talla-l-atras.jpeg"
+  },
+
+  {
+    nombre: "Mercedes F1 · Equipo oficial",
+    deporte: "Fórmula 1",
+    precio: 849,
+    tallas: ["L"],
+    foto: "fotos/jersey-mercedes-talla-l-frente.jpeg",
+    fotoAtras: "fotos/jersey-mercedes-talla-l-atras.jpeg"
+  },
+
+  {
+    nombre: "Mercedes F1 · Playera",
+    deporte: "Fórmula 1",
+    precio: 849,
+    tallas: ["M"],
+    foto: "fotos/playera-mercedes-talla-m-frente.jpeg",
+    fotoAtras: "fotos/playera-mercedes-talla-m-atras.jpeg"
+  },
+
 ];
