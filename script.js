@@ -19,18 +19,38 @@ function formatoPrecio(precio) {
   return "$" + Number(precio).toLocaleString("es-MX") + " MXN";
 }
 
+// Si el jersey tiene "oferta", ese es el precio que paga el cliente
+function enOferta(jersey) {
+  return jersey.oferta != null && Number(jersey.oferta) < Number(jersey.precio);
+}
+
+function precioFinal(jersey) {
+  return enOferta(jersey) ? jersey.oferta : jersey.precio;
+}
+
+function dibujarPrecio(jersey) {
+  if (!enOferta(jersey)) return `<span class="card-price">${formatoPrecio(jersey.precio)}</span>`;
+  return `
+    <span class="card-price sale">
+      <s class="price-old">${formatoPrecio(jersey.precio)}</s>
+      <span class="price-new">${formatoPrecio(jersey.oferta)}</span>
+    </span>`;
+}
+
 function linkWhatsApp(jersey) {
-  const mensaje = `Hola, me interesa el jersey ${jersey.nombre} (${formatoPrecio(jersey.precio)}) en talla ___`;
+  const mensaje = `Hola, me interesa el jersey ${jersey.nombre} (${formatoPrecio(precioFinal(jersey))}) en talla ___`;
   return `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(mensaje)}`;
 }
 
 // Frente y espalda: si hay fotoAtras, al tocar la foto se cambia de lado
 function dibujarFotos(j) {
+  const etiqueta = enOferta(j) ? `<span class="sale-tag">Oferta</span>` : "";
   const frente = `<img class="card-img" src="${limpiar(j.foto)}" alt="${limpiar(j.nombre)} - frente" loading="lazy">`;
-  if (!j.fotoAtras) return `<div class="card-photo">${frente}</div>`;
+  if (!j.fotoAtras) return `<div class="card-photo">${frente}${etiqueta}</div>`;
 
   return `
     <button type="button" class="card-photo flip" aria-label="Ver frente y espalda de ${limpiar(j.nombre)}">
+      ${etiqueta}
       ${frente}
       <img class="card-img back" src="${limpiar(j.fotoAtras)}" alt="${limpiar(j.nombre)} - espalda" loading="lazy">
       <span class="flip-tag"><span class="tag-front">Frente</span><span class="tag-back">Espalda</span> ↻</span>
@@ -56,7 +76,7 @@ function dibujarCatalogo(deporte) {
       <div class="card-body">
         <span class="card-sport">${limpiar(j.deporte)}</span>
         <h3 class="card-name">${limpiar(j.nombre)}</h3>
-        <span class="card-price">${formatoPrecio(j.precio)}</span>
+        ${dibujarPrecio(j)}
         <div class="sizes">
           ${(j.tallas || []).map(t => `<span class="size">${limpiar(t)}</span>`).join("")}
         </div>

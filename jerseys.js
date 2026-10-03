@@ -28,6 +28,13 @@
   - Fórmula 1 ...................... 849
   - Manga larga: +100 al precio de arriba (ej. retro manga larga = 949)
 
+  OFERTAS:
+  - Para poner un jersey en oferta, agrega una línea debajo del precio:
+        precio: 749,
+        oferta: 599,
+    En la página se verá el precio normal tachado y el de oferta en dorado.
+  - Para quitar la oferta, borra la línea de oferta.
+
   REGLAS:
   - nombre y foto van entre comillas " ".
   - deporte: usa uno de estos: "Fútbol", "Fútbol americano", "Béisbol", "Fórmula 1".
@@ -70,6 +77,7 @@ const JERSEYS = [
     nombre: "Real Madrid 2025 · Mbappé #10",
     deporte: "Fútbol",
     precio: 749,
+    oferta: 599,
     tallas: ["L"],
     foto: "fotos/jersey-real-madrid-2025-mbappe-talla-l-frente.jpeg",
     fotoAtras: "fotos/jersey-real-madrid-2025-mbappe-talla-l-atras.jpeg"
@@ -79,6 +87,7 @@ const JERSEYS = [
     nombre: "Chelsea 2025 · Palmer #10",
     deporte: "Fútbol",
     precio: 749,
+    oferta: 599,
     tallas: ["L"],
     foto: "fotos/jersey-chelsea-2025-palmer-talla-l-frente.jpeg",
     fotoAtras: "fotos/jersey-chelsea-2025-palmer-talla-l-atras.jpeg"
@@ -88,6 +97,7 @@ const JERSEYS = [
     nombre: "Barcelona 2025 Visita · Lamine Yamal #10",
     deporte: "Fútbol",
     precio: 749,
+    oferta: 599,
     tallas: ["M"],
     foto: "fotos/jersey-barcelona-2025-lamine-yamal-talla-m-frente.jpeg",
     fotoAtras: "fotos/jersey-barcelona-2025-lamine-yamal-talla-m-atras.jpeg"
