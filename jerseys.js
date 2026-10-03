@@ -26,6 +26,7 @@
   - Fútbol retro ................... 849
   - Béisbol y Fútbol americano ..... 1099
   - Fórmula 1 ...................... 849
+  - Manga larga: +100 al precio de arriba (ej. retro manga larga = 949)
 
   REGLAS:
   - nombre y foto van entre comillas " ".
@@ -158,7 +159,7 @@ const JERSEYS = [
   {
     nombre: "Manchester United 1998 · Beckham #7 (manga larga)",
     deporte: "Fútbol",
-    precio: 849,
+    precio: 949,
     tallas: ["L"],
     foto: "fotos/jersey-manchester-united-1998-beckham-talla-l-frente.jpeg",
     fotoAtras: "fotos/jersey-manchester-united-1998-beckham-talla-l-atras.jpeg"
