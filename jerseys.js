@@ -84,6 +84,15 @@ const JERSEYS = [
   },
 
   {
+    nombre: "Barcelona 2025 Visita · Lamine Yamal #10",
+    deporte: "Fútbol",
+    precio: 749,
+    tallas: ["M"],
+    foto: "fotos/jersey-barcelona-2025-lamine-yamal-talla-m-frente.jpeg",
+    fotoAtras: "fotos/jersey-barcelona-2025-lamine-yamal-talla-m-atras.jpeg"
+  },
+
+  {
     nombre: "Barcelona 2009 · Messi #10",
     deporte: "Fútbol",
     precio: 849,
@@ -138,12 +147,39 @@ const JERSEYS = [
   },
 
   {
+    nombre: "Manchester United 2002 · Ronaldo #7",
+    deporte: "Fútbol",
+    precio: 849,
+    tallas: ["L"],
+    foto: "fotos/jersey-manchester-united-2002-ronaldo-talla-l-frente.jpeg",
+    fotoAtras: "fotos/jersey-manchester-united-2002-ronaldo-talla-l-atras.jpeg"
+  },
+
+  {
+    nombre: "Manchester United 1998 · Beckham #7 (manga larga)",
+    deporte: "Fútbol",
+    precio: 849,
+    tallas: ["L"],
+    foto: "fotos/jersey-manchester-united-1998-beckham-talla-l-frente.jpeg",
+    fotoAtras: "fotos/jersey-manchester-united-1998-beckham-talla-l-atras.jpeg"
+  },
+
+  {
     nombre: "New York Yankees · Judge #99",
     deporte: "Béisbol",
     precio: 1099,
     tallas: ["M"],
     foto: "fotos/jersey-yankees-judge-talla-m-frente.jpeg",
     fotoAtras: "fotos/jersey-yankees-judge-talla-m-atras.jpeg"
+  },
+
+  {
+    nombre: "Cincinnati Bengals · Burrow #9",
+    deporte: "Fútbol americano",
+    precio: 1099,
+    tallas: ["XL"],
+    foto: "fotos/jersey-bengals-burrow-talla-xl-frente.jpeg",
+    fotoAtras: "fotos/jersey-bengals-burrow-talla-xl-atras.jpeg"
   },
 
 ];
